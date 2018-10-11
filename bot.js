@@ -1,5 +1,4 @@
 const Discord = require("discord.io");
-const logger = require("winston");
 const auth = require("./auth.json");
 const got = require('got');
 
@@ -52,7 +51,7 @@ bot.on("message", function (user, userID, channelID, message, evt){
 	if (user === bot.username)
 		return;
 
-	// !commands
+	// !Commands
 	if (message.substring(0, 1) === "!"){
 		console.log("input: " + message);
 
