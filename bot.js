@@ -25,24 +25,24 @@ bot.on("ready", function (evt){
 	let lastLeet = false;
 
 	// Scheduled messages
-	setInterval(function(){
-		date = new Date();
+// 	setInterval(function(){
+// 		date = new Date();
 
-		// L33t T1m3
-		if (
-			date.getHours() === 13 && date.getMinutes() === 37 &&
-			(!lastLeet || lastLeet.getDate() !== date.getDate())
-		){
-			for (let i = 0; i < scheduledMsgChannels.length; i++){
-				bot.sendMessage( {
-					to: scheduledMsgChannels[i],
-					message: "1t's L33t T1m3!"
-				} );
-			}
+// 		// L33t T1m3
+// 		if (
+// 			date.getHours() === 13 && date.getMinutes() === 37 &&
+// 			(!lastLeet || lastLeet.getDate() !== date.getDate())
+// 		){
+// 			for (let i = 0; i < scheduledMsgChannels.length; i++){
+// 				bot.sendMessage( {
+// 					to: scheduledMsgChannels[i],
+// 					message: "1t's L33t T1m3!"
+// 				} );
+// 			}
 
-			lastLeet = new Date();
-		}
-	}, 5000);
+// 			lastLeet = new Date();
+// 		}
+// 	}, 5000);
 });
 
 
