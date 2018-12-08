@@ -51,6 +51,8 @@ bot.on("message", function (user, userID, channelID, message, evt){
 	if (user === bot.username)
 		return;
 
+	date = new Date();
+
 	// !Commands
 	if (message.substring(0, 1) === "!"){
 		console.log("input: " + message);
